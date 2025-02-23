@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ko6: Main Page</title>
+<title>ko6: &lt;img src=&quot;docs/logo55.png&quot; alt=&quot;KO6 Logo&quot;/&gt; ko6</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,6 +20,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="logo55.png"/></td>
   <td id="projectalign">
    <div id="projectname">ko6
    </div>
@@ -69,10 +70,96 @@ $(function() {
 </div>
 </div>
 
-<div class="header">
-  <div class="headertitle"><div class="title">ko6 Documentation</div></div>
+<div><div class="header">
+  <div class="headertitle"><div class="title"><img src="docs/logo55.png" alt="KO6 Logo" class="inline"/> ko6 </div></div>
 </div><!--header-->
 <div class="contents">
+<div class="textblock"><p><a class="anchor" id="md_README"></a> </p><div class="fragment"><div class="line">Small Operating System for Educational Purpose</div>
+<div class="line"> _     ___    __</div>
+<div class="line">| |__ /&#39;v&#39;\  / /      \date        2025-02-11</div>
+<div class="line">| / /(     )/ _ \     \copyright   2021-2025 Sorbonne University</div>
+<div class="line">|_\_\ x___x \___/                  https://opensource.org/licenses/MIT</div>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md1"></a>
+License</h1>
+<ul>
+<li>ko6 is licensed under the <b>MIT License</b>.</li>
+<li>Some third-party components, such as <code>external/libfdt/</code>, are licensed under the <b>BSD-2-Clause</b> License.</li>
+<li>See the <a href="./LICENSE">LICENSE</a> and <a href="./src/soft/external/libfdt/LICENSE.BSD">LICENSE.BSD</a> files for full details.</li>
+<li>If you use ko6, let me know! I'll be happy to hear about it and help if I can.</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md2"></a>
+Project Authors</h1>
+<p>See the full list of contributors in CONTRIBUTORS.md.</p>
+<h1><a class="anchor" id="autotoc_md3"></a>
+Presentation</h1>
+<p>ko6 (<em>pronounce it "kit-o-sys" o is the letter not the number</em>) is a small operating system for educational purpose.</p>
+<h1><a class="anchor" id="autotoc_md4"></a>
+Configuration</h1>
+<p>If you put ko6 in your home directory, you must source the <code>SourceMe.sh</code> file to set the environment. You can add <code>source $HOME/ko6/SourceMe.sh</code> in the <code>$HOME/.bashrc</code>. Once, the environment is set, in order to check if it works, run : <code>cd $HOME/ko6; make hello</code>, you must see two xterm windows appear. On the big one (xterm0), you must see, the logo and a system dump (internal registers and scheduler). On the small one, you must see « Hello World! ».</p>
+<p>The source files are all 100 characters long because of the many comments on the lines. Therefore, 100-character wide windows must be used for editing. The C code uses the Kernighan and Ritchie style.</p>
+<h1><a class="anchor" id="autotoc_md5"></a>
+KO6 Project Structure</h1>
+<h2><a class="anchor" id="autotoc_md6"></a>
+&lt;strong&gt;src/hard&lt;/strong&gt;</h2>
+<p>Plateform definitions</p>
+<h2><a class="anchor" id="autotoc_md7"></a>
+&lt;strong&gt;src/soft&lt;/strong&gt;</h2>
+<p>Code of Operating System and Applications</p>
+<ul>
+<li><b>common/</b><br  />
+ Shared files between applications and the kernel.</li>
+<li><b>hal/</b><br  />
+ Hardware Abstraction Layer (HAL) API declarations and implementations for each hardware.<ul>
+<li><b>cpu/</b><ul>
+<li><b>mips/</b>: Implementation for MIPS.</li>
+<li><b>riscv/</b>: Implementation for RISC-V.</li>
+</ul>
+</li>
+<li><b>devices/</b><br  />
+ API for different types of devices.<br  />
+ Some device types are missing, particularly block devices.<br  />
+ Each device type may have multiple implementations located in subdirectories.<ul>
+<li><b>chardev/</b>: Character devices.</li>
+<li><b>dma/</b>: Direct Memory Access.</li>
+<li><b>icu/</b> (<em>could be renamed to irq</em>): Interrupt Controller Unit.</li>
+<li><b>timer/</b>: Timer management.</li>
+</ul>
+</li>
+<li><b>soc/</b><br  />
+ A SoC consists of a CPU and various devices.<br  />
+ The API here is limited to initialization, which takes the device tree as an argument.<br  />
+ The initialization function is implemented differently for each SoC, calling CPU and device initialization functions.<ul>
+<li><b>almo1-mips/</b>: SoC implementation for ALMO1-MIPS.</li>
+<li><b>qemu-virt-riscv/</b>: SoC implementation for QEMU-Virt-RISC-V.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><b>kernel/</b><br  />
+ Kernel service code, independent of hardware resources.<br  />
+ The number of files is intentionally minimized, with one C file per subsystem.</li>
+<li><b>fs/</b><br  />
+ Code related to real file systems.<br  />
+ Includes both the implementation of Virtual File System (VFS) functions inside the kernel and tools for constructing the disk.<ul>
+<li><b>kfs/</b>: Implementation of the KFS real file system.</li>
+</ul>
+</li>
+<li><b>external/</b><br  />
+ Third-party code.<ul>
+<li><b>libfdt/</b>: Flat Device Tree (FDT) library.</li>
+</ul>
+</li>
+<li><b>ulib/</b><br  />
+ User-space libraries.</li>
+<li><b>uapp/</b><br  />
+ User applications.<ul>
+<li><b>barrier/</b></li>
+<li><b>hello/</b></li>
+<li><b>test/</b> </li>
+</ul>
+</li>
+</ul>
+</div></div><!-- PageDoc -->
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

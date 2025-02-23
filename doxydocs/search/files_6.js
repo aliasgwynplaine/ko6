@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['kdev_2ec_0',['kdev.c',['../kdev_8c.html',1,'']]],
+  ['kdev_2eh_1',['kdev.h',['../kdev_8h.html',1,'']]],
+  ['kfs_2ec_2',['kfs.c',['../kfs_8c.html',1,'']]],
+  ['kfs_2eh_3',['kfs.h',['../kfs_8h.html',1,'']]],
+  ['kinit_2ec_4',['kinit.c',['../kinit_8c.html',1,'']]],
+  ['kirq_2ec_5',['kirq.c',['../kirq_8c.html',1,'']]],
+  ['kirq_2eh_6',['kirq.h',['../kirq_8h.html',1,'']]],
+  ['klibc_2ec_7',['klibc.c',['../klibc_8c.html',1,'']]],
+  ['klibc_2eh_8',['klibc.h',['../klibc_8h.html',1,'']]],
+  ['kmemory_2ec_9',['kmemory.c',['../kmemory_8c.html',1,'']]],
+  ['kmemory_2eh_10',['kmemory.h',['../kmemory_8h.html',1,'']]],
+  ['kpanic_2eh_11',['kpanic.h',['../kpanic_8h.html',1,'']]],
+  ['kpanica_2es_12',['kpanica.S',['../riscv_2kpanica_8S.html',1,'(Global Namespace)'],['../mips_2kpanica_8S.html',1,'(Global Namespace)']]],
+  ['kpanicc_2ec_13',['kpanicc.c',['../mips_2kpanicc_8c.html',1,'(Global Namespace)'],['../riscv_2kpanicc_8c.html',1,'(Global Namespace)']]],
+  ['kprocess_2ec_14',['kprocess.c',['../kprocess_8c.html',1,'']]],
+  ['kprocess_2eh_15',['kprocess.h',['../kprocess_8h.html',1,'']]],
+  ['ksynchro_2ec_16',['ksynchro.c',['../ksynchro_8c.html',1,'']]],
+  ['ksynchro_2eh_17',['ksynchro.h',['../ksynchro_8h.html',1,'']]],
+  ['ksyscalls_2ec_18',['ksyscalls.c',['../ksyscalls_8c.html',1,'']]],
+  ['kthread_2ec_19',['kthread.c',['../kthread_8c.html',1,'']]],
+  ['kthread_2eh_20',['kthread.h',['../kthread_8h.html',1,'']]],
+  ['ktools_2ec_21',['ktools.c',['../ktools_8c.html',1,'']]]
+];

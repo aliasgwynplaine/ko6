@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['icu_5facknowledge_0',['icu_acknowledge',['../structicu__ops__s.html#a599fc221fdbf8bb68d68d8012dd1321c',1,'icu_ops_s']]],
+  ['icu_5fget_5fhighest_1',['icu_get_highest',['../structicu__ops__s.html#a8ba25afec99e838cc10924ece84be50e',1,'icu_ops_s']]],
+  ['icu_5finit_2',['icu_init',['../structicu__ops__s.html#ae4520a9c760003bfb3d637749a9728ad',1,'icu_ops_s']]],
+  ['icu_5fmask_3',['icu_mask',['../structicu__ops__s.html#a55436bf17a7cb5a7bb71a9dbfab861a5',1,'icu_ops_s']]],
+  ['icu_5fset_5fpriority_4',['icu_set_priority',['../structicu__ops__s.html#a21383884b6cd439a32360f251dbf44b9',1,'icu_ops_s']]],
+  ['icu_5funmask_5',['icu_unmask',['../structicu__ops__s.html#ab1794a0a36578c1ec9d43ed33d5ffc53',1,'icu_ops_s']]],
+  ['ier_6',['ier',['../structns16550__general__regs__s.html#af3ab39032c2a64d4758bfdd2a6012e4a',1,'ns16550_general_regs_s::ier()'],['../ns16550_8h.html#a6053ddeddfda5293c71e12864d2d868c',1,'ier():&#160;ns16550.h']]],
+  ['inode_7',['inode',['../structkfs__dentry__s.html#a4e87e5375dfccc972eae6a05bfa2a086',1,'kfs_dentry_s']]],
+  ['interruptvector_8',['InterruptVector',['../kirq_8c.html#a3d32ff97b6058692226afceace7262a6',1,'kirq.c']]],
+  ['irq_5facknowledge_9',['irq_acknowledge',['../structirq__ops__s.html#a47249810a001e1248b64027b42e10157',1,'irq_ops_s']]],
+  ['irq_5fenable_10',['irq_enable',['../structsoclib__dma__regs__s.html#a59ab85953a7860ed2e63ce90052ffdb3',1,'soclib_dma_regs_s']]],
+  ['irq_5fget_5fhighest_11',['irq_get_highest',['../structirq__ops__s.html#a95db70e43288619df51cd5a15f06bcc8',1,'irq_ops_s']]],
+  ['irq_5finit_12',['irq_init',['../structirq__ops__s.html#a8765bd2d0586947d37388cd3748c6523',1,'irq_ops_s']]],
+  ['irq_5fmask_13',['irq_mask',['../structirq__ops__s.html#a91929ab8a7e7a52ff91935e527985903',1,'irq_ops_s']]],
+  ['irq_5fset_5fpriority_14',['irq_set_priority',['../structirq__ops__s.html#aaa4a525afc4a0629034df34675e31b72',1,'irq_ops_s']]],
+  ['irq_5funmask_15',['irq_unmask',['../structirq__ops__s.html#a429dcacbf3a588b0c32e6613db8a97fe',1,'irq_ops_s']]],
+  ['is_5fdirty_16',['is_dirty',['../structpage__s.html#ae281f75fa7844e705c1fa5dfcff0d6ae',1,'page_s']]],
+  ['isr_17',['isr',['../structns16550__general__regs__s.html#afc8dd5bfaf88f0333a5c869b75b523a1',1,'ns16550_general_regs_s::isr()'],['../ns16550_8h.html#ac64837627485de9bede4a664e1f15bb8',1,'isr():&#160;ns16550.h']]]
+];

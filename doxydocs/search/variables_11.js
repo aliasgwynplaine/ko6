@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['set_0',['set',['../structsoclib__icu__regs__s.html#ac739bbbb3c2ebdd3e56126a8f894809b',1,'soclib_icu_regs_s']]],
+  ['size_1',['size',['../structfdt__reserve__entry.html#ace12399f157bc46877fbcddec98da67e',1,'fdt_reserve_entry::size()'],['../structblock__info__s.html#ac5d895bc19d09c9bb8dc9dafea66e159',1,'block_info_s::size()'],['../structkfs__inode__s.html#ae4c3aa6d76cc8e92a9b29c2b3707f473',1,'kfs_inode_s::size()']]],
+  ['size_5fdt_5fstrings_2',['size_dt_strings',['../structfdt__header.html#a64c5ed9e447a81137bf30a6bc3c627ee',1,'fdt_header']]],
+  ['size_5fdt_5fstruct_3',['size_dt_struct',['../structfdt__header.html#a5d7585b3780d6e983fe0924a0e23ffcb',1,'fdt_header']]],
+  ['slab_4',['Slab',['../kmemory_8c.html#af76c5bf598586d0024d1e53b108c868c',1,'kmemory.c']]],
+  ['slab_5',['slab',['../structpage__s.html#a32a24096972b27d87a55051df616ae99',1,'page_s']]],
+  ['soclibdmaops_6',['SoclibDMAOps',['../soclib-dma_8c.html#a80351df0b0525153b84f567f1d5c77d1',1,'SoclibDMAOps():&#160;soclib-dma.c'],['../soclib-dma_8h.html#a80351df0b0525153b84f567f1d5c77d1',1,'SoclibDMAOps():&#160;soclib-dma.c']]],
+  ['soclibicuops_7',['SoclibICUOps',['../irq_2soclib-icu_8h.html#afb40570f9a309b6ec805f02ea8e2a990',1,'SoclibICUOps():&#160;soclib-icu.c'],['../icu_2soclib-icu_8c.html#a57148fb85883dc5ca0480a7b55398c58',1,'SoclibICUOps():&#160;soclib-icu.c'],['../icu_2soclib-icu_8h.html#a57148fb85883dc5ca0480a7b55398c58',1,'SoclibICUOps():&#160;soclib-icu.c'],['../irq_2soclib-icu_8c.html#a57148fb85883dc5ca0480a7b55398c58',1,'SoclibICUOps():&#160;soclib-icu.c']]],
+  ['soclibtimerops_8',['SoclibTimerOps',['../soclib-timer_8h.html#aa3f96a0578c32ac8fd0d3b2526182084',1,'SoclibTimerOps():&#160;soclib-timer.c'],['../soclib-timer_8c.html#aa3f96a0578c32ac8fd0d3b2526182084',1,'SoclibTimerOps():&#160;soclib-timer.c']]],
+  ['soclibttyops_9',['SoclibTTYOps',['../soclib-tty_8h.html#ac60ea3e14652d47e0814fac85c18b2ff',1,'SoclibTTYOps():&#160;soclib-tty.c'],['../soclib-tty_8c.html#ac60ea3e14652d47e0814fac85c18b2ff',1,'SoclibTTYOps():&#160;soclib-tty.c']]],
+  ['spr_10',['spr',['../ns16550_8h.html#a1b52dd6680b10d117c1edc6b94bed1e0',1,'spr():&#160;ns16550.h'],['../structns16550__general__regs__s.html#a6a65ab1a76ecbf50882ac8595d21bae7',1,'ns16550_general_regs_s::spr()']]],
+  ['src_11',['src',['../structsoclib__dma__regs__s.html#a5e158dc8ad7e09c37a6520c04c3ce797',1,'soclib_dma_regs_s']]],
+  ['start_12',['start',['../structthread__s.html#a63551d8e6d21a7370c5b3652cea282fc',1,'thread_s']]],
+  ['state_13',['state',['../structthread__s.html#ab3fce89938b5156047553299f71a1370',1,'thread_s::state()'],['../structsoclib__icu__regs__s.html#a598718b6403f6a06261e28246093c3c6',1,'soclib_icu_regs_s::state()']]],
+  ['status_14',['status',['../structsoclib__tty__regs__s.html#a6aa0e45df47d0a468508e334b77abc63',1,'soclib_tty_regs_s']]],
+  ['str_15',['str',['../structfdt__errtabent.html#afb5741d1d343729e8d9025a7cc129315',1,'fdt_errtabent']]],
+  ['syscallvector_16',['SyscallVector',['../ksyscalls_8c.html#ac032bde1c16f368d24dbcde8d400a203',1,'ksyscalls.c']]]
+];
