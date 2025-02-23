@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Chapter 1 - ko6</title>
+        <title>Project Structure - ko6</title>
 
 
         <!-- Custom HTML head -->
@@ -152,13 +152,97 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="chapter-1"><a class="header" href="#chapter-1">Chapter 1</a></h1>
+                        <h1 id="project-structure"><a class="header" href="#project-structure">Project structure</a></h1>
+<h2 id="srchard"><a class="header" href="#srchard"><strong>src/hard</strong></a></h2>
+<p>Plateform definitions</p>
+<h2 id="srcsoft"><a class="header" href="#srcsoft"><strong>src/soft</strong></a></h2>
+<p>Code of Operating System and Applications</p>
+<ul>
+<li>
+<p><strong>common/</strong><br>
+Shared files between applications and the kernel.</p>
+</li>
+<li>
+<p><strong>hal/</strong><br>
+Hardware Abstraction Layer (HAL) API declarations and implementations for each hardware.</p>
+<ul>
+<li>
+<p><strong>cpu/</strong></p>
+<ul>
+<li><strong>mips/</strong>: Implementation for MIPS.</li>
+<li><strong>riscv/</strong>: Implementation for RISC-V.</li>
+</ul>
+</li>
+<li>
+<p><strong>devices/</strong><br>
+API for different types of devices.<br>
+Some device types are missing, particularly block devices.<br>
+Each device type may have multiple implementations located in subdirectories.</p>
+<ul>
+<li><strong>chardev/</strong>: Character devices.</li>
+<li><strong>dma/</strong>: Direct Memory Access.</li>
+<li><strong>icu/</strong> (<em>could be renamed to irq</em>): Interrupt Controller Unit.</li>
+<li><strong>timer/</strong>: Timer management.</li>
+</ul>
+</li>
+<li>
+<p><strong>soc/</strong><br>
+A SoC consists of a CPU and various devices.<br>
+The API here is limited to initialization, which takes the device tree as an argument.<br>
+The initialization function is implemented differently for each SoC, calling CPU and device initialization functions.</p>
+<ul>
+<li><strong>almo1-mips/</strong>: SoC implementation for ALMO1-MIPS.</li>
+<li><strong>qemu-virt-riscv/</strong>: SoC implementation for QEMU-Virt-RISC-V.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>kernel/</strong><br>
+Kernel service code, independent of hardware resources.<br>
+The number of files is intentionally minimized, with one C file per subsystem.</p>
+</li>
+<li>
+<p><strong>fs/</strong><br>
+Code related to real file systems.<br>
+Includes both the implementation of Virtual File System (VFS) functions inside the kernel and tools for constructing the disk.</p>
+<ul>
+<li><strong>kfs/</strong>: Implementation of the KFS real file system.</li>
+</ul>
+</li>
+<li>
+<p><strong>external/</strong><br>
+Third-party code.</p>
+<ul>
+<li><strong>libfdt/</strong>: Flat Device Tree (FDT) library.</li>
+</ul>
+</li>
+<li>
+<p><strong>ulib/</strong><br>
+User-space libraries.</p>
+</li>
+<li>
+<p><strong>uapp/</strong><br>
+User applications.</p>
+<ul>
+<li><strong>barrier/</strong></li>
+<li><strong>hello/</strong></li>
+<li><strong>test/</strong></li>
+</ul>
+</li>
+</ul>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="about.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
 
+                            <a rel="next prefetch" href="installation.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
 
                         <div style="clear: both"></div>
                     </nav>
@@ -166,7 +250,13 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="about.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
 
+                    <a rel="next prefetch" href="installation.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
             </nav>
 
         </div>
