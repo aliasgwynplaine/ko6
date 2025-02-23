@@ -19,4 +19,4 @@ jobs:
           folder: docs/html
           target_folder: doxydocs
           config_file: docs/doxygen/doxygen.cfg
-          doxygen_version: 1.9.1
+          doxygen_version: 1.9.6
