@@ -16,7 +16,7 @@ jobs:
         with:
           github_token: ${{ secrets.GH_TOKEN }}
           branch: gh-pages
-          folder: docs/html
+          folder: doxygen/html
           target_folder: doxydocs
           config_file: docs/doxygen/doxygen.cfg
           doxygen_version: 1.9.6
