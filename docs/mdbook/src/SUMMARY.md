@@ -1,3 +1,7 @@
 # Summary
 
-- [Chapter 1](./chapter_1.md)
+- [about](./about.md)
+    - [Project Structure](project-structure.md)
+- [Installation](./installation.md)
+    - [Configuration](./configuration.md)
+    - [Compiling](./compiling.md)
